@@ -1,4 +1,6 @@
-﻿namespace OOP_02
+﻿using OOP_02.Inheritance;
+
+namespace OOP_02
 {
     internal class Program
     {
@@ -22,6 +24,25 @@
             // Use Struct when you need to create a small object that will be used in a few places in the program
 
             #endregion
+
+            #region Inheritance
+            // 2. Inheritance
+            // Inheritance is a mechanism in which one object acquires all the properties and behaviors of a parent object.
+            // X ===> Y
+
+            //Parent parent = new Parent(1,2);
+
+            //Console.WriteLine(parent);
+
+            //parent.Fun01();
+            //parent.Fun02();
+
+            //Child child = new Child(1, 2, 2);
+            //child.Fun01();
+            //child.Fun02(); 
+            #endregion
+
+
         }
     }
 }
