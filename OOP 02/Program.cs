@@ -174,6 +174,14 @@ namespace OOP_02
             //Employee(partTime); 
             #endregion
 
+            #region Types
+            //TypeA typeA;
+
+            //typeA = new TypeA();
+            //typeA = new TypeB(); // TypeA is a parent of typeb
+            //typeA = new TypeC(); // TypeA is a Indriect parent of typec
+            //typeA = new TypeD(); // TypeA is a Indriect parent of typed 
+            #endregion
         }
     } 
 }
