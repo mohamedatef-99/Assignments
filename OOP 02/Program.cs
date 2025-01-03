@@ -100,6 +100,23 @@ namespace OOP_02
 
             #endregion
 
+            #region Not Binding
+            //TypeB Ref = new TypeB();
+
+            // Ref of any type refere to object of the same type
+
+            //Ref = new TypeA(); // must apply casting
+
+            // error beacuse Child is a parent
+
+            //TypeA Ref = new TypeA();
+            //Ref = new TypeB();
+
+            //TypeB typeB = Ref; // error ==> must apply casting
+            //TypeB typeB = (TypeB)Ref; //applying casting // not binding 
+            #endregion
+
+
         }
     }
 }
