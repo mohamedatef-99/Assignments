@@ -1,9 +1,20 @@
 ﻿using OOP_02.Inheritance;
+using OOP_02.Override;
 
 namespace OOP_02
 {
     internal class Program
     {
+
+        //static int sum(int x, int y)
+        //{
+        //    return x + y;
+        //}
+
+        //static double sum(double x, double y)
+        //{
+        //    return x + y;
+        //}
         static void Main(string[] args)
         {
             #region Class VS Struct
@@ -40,6 +51,35 @@ namespace OOP_02
             //Child child = new Child(1, 2, 2);
             //child.Fun01();
             //child.Fun02(); 
+            #endregion
+
+            #region Polymorphism
+            // 3. Polymorphism
+            // 3.1 Polymorphism Method (Function) Overloading
+            // 3.2 Polymorphism Method (Function) Overriding
+
+
+            // 3.1 Polymorphism Method (Function) Overloading
+            // There are more than one method or function (in the same scope [class - struct]) have the same NAME but with different signature(count - type - order) of parameters
+            // OR
+            // Polymorphism Method (Function) Overloading is a mechanism that allows you to define the same method more than once in the same class
+            // but with different parameters.
+            // The parameters can differ in the number of parameters or the data type of the parameters.
+
+            //sum(1, 2);
+            //sum(1.3,2.20);
+
+
+            // 3.2 Polymorphism Method (Function) Overriding
+            // There are more than on fucntions [in different class] these have the same name and the same signaure but with different behaviour
+
+            //TypeB typeB = new TypeB() { A = 1, B = 2};
+
+            //typeB.A = 1;
+            //typeB.B = 2;
+
+            //typeB.Fun01();
+            //typeB.Fun02(); 
             #endregion
 
 
