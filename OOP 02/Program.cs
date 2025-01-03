@@ -82,6 +82,23 @@ namespace OOP_02
             //typeB.Fun02(); 
             #endregion
 
+            #region Binding
+            // Binding
+            // What is binding?
+            // ReferenceFromParent -----> ObjectFromChild
+
+            //TypeA Ref;
+            //Ref = new TypeA();
+            //Ref = new TypeB();
+
+            // Child is a parent
+            // TypeB is a TypeA
+
+            //Ref = new TypeB();
+            //Ref.A = 12;
+            //Ref.B = 13; // error
+
+            #endregion
 
         }
     }
