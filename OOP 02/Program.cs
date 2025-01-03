@@ -1,4 +1,5 @@
-﻿using OOP_02.Inheritance;
+﻿using OOP_02.Binding;
+using OOP_02.Inheritance;
 using OOP_02.Override;
 
 namespace OOP_02
@@ -14,6 +15,32 @@ namespace OOP_02
         //static double sum(double x, double y)
         //{
         //    return x + y;
+        //}
+
+        //static void Employee(FullTimeEmployee employee)
+        //{
+        //    if(employee is not null)
+        //    {
+        //        employee.Fun01();
+        //        employee.Fun02();
+        //    }
+        //}
+        //static void Employee(PartTime employee)
+        //{
+        //    if (employee is not null)
+        //    {
+        //        employee.Fun01();
+        //        employee.Fun02();
+        //    }
+        //}
+
+        //static void Employee(Employee employee)
+        //{
+        //    if (employee is not null)
+        //    {
+        //        employee.Fun01();
+        //        employee.Fun02();
+        //    }
         //}
         static void Main(string[] args)
         {
@@ -116,7 +143,37 @@ namespace OOP_02
             //TypeB typeB = (TypeB)Ref; //applying casting // not binding 
             #endregion
 
+            #region When Need Binding
+            // When U need Binding?
+
+            //FullTimeEmployee fullTime = new FullTimeEmployee()
+            //{
+            //    Id = 1,
+            //    Name = "Ahmed",
+            //    Email = "ahmed@.g.c",
+            //    Address = "Cairo",
+            //    Salary = 1000
+            //};
+
+            //PartTime partTime = new PartTime()
+            //{
+            //    Id = 1,
+            //    Name = "Ahmed",
+            //    Email = "ahmed@.g.c",
+            //    Address = "Cairo",
+            //    HoureRate = 100,
+            //    NumberOfHours = 10
+            //};
+
+            //Employee(fullTime);
+            ////Employee(null);
+            //// NullReferenceException
+            //Employee(partTime);
+
+            //Employee(fullTime);
+            //Employee(partTime); 
+            #endregion
 
         }
-    }
+    } 
 }
