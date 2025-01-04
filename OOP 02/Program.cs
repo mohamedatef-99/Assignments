@@ -182,6 +182,51 @@ namespace OOP_02
             //typeA = new TypeC(); // TypeA is a Indriect parent of typec
             //typeA = new TypeD(); // TypeA is a Indriect parent of typed 
             #endregion
+
+
+            //Task 1
+            #region Task 1
+            TypeA typeA;
+            typeA = new TypeA();
+            typeA = new TypeB();
+            typeA = new TypeC();
+            typeA = new TypeD();
+
+            typeA.Fun01();
+            typeA.Fun02();
+
+            TypeB typeB;
+            //typeB = new TypeA(); // error
+            typeB = new TypeB();
+            typeB = new TypeC();
+            typeB = new TypeD();
+
+            typeB.Fun01();
+            typeB.Fun02();
+
+            TypeC typeC;
+            //typeC = new TypeA(); // error
+            //typeC = new TypeB(); // error
+            typeC = new TypeC();
+            typeC = new TypeD();
+
+            typeC.Fun01();
+            typeC.Fun02();
+
+            TypeD typeD;
+            //typeD = new TypeA(); // error
+            //typeD = new TypeB(); // error
+            //typeD = new TypeC(); //error
+            typeD = new TypeD();
+
+            typeD.Fun01();
+            typeD.Fun02();
+            #endregion
+
+            // Task 2
+            // 1. Protected Access Modifier: protected access modifier is accessible within the same class and by derived class instances.
+            // 2. Private Protected Access Modifier: private protected access modifier is accessible within the same assembly and by derived class instances.
+            // 3. Internal Protected Access Modifier: accessible within the same assembly and in derived classes, even if the derived classes are in a different assembly.
         }
     } 
 }
