@@ -4,6 +4,27 @@ namespace OOP_03
 {
     internal class Program
     {
+        //static void PrintNum(SeriesByTwo series)
+        //{
+        //    for(int i = 0; i< 10; i++)
+        //    {
+        //        Console.Write($"{series.Current} ");
+        //        series.Next();
+        //    }
+        //    Console.WriteLine();
+        //    series.Reset();
+        //}
+
+        //static void PrintNum(ISeries series)  // instead of repeating the same code, we can use interface and it will accept any class which is implement the interface
+        //{
+        //    for (int i = 0; i < 10; i++)
+        //    {
+        //        Console.Write($"{series.Current} ");
+        //        series.Next();
+        //    }
+        //    Console.WriteLine();
+        //    series.Reset();
+        //}
         static void Main(string[] args)
         {
             #region Interface
@@ -28,6 +49,8 @@ namespace OOP_03
             //myType.Print(); 
             #endregion
 
+            //SeriesByTwo series = new SeriesByTwo();
+            //PrintNum(series);
         }
     }
 }
