@@ -51,6 +51,20 @@ namespace OOP_03
 
             //SeriesByTwo series = new SeriesByTwo();
             //PrintNum(series);
+
+            //Car car = new Car();
+            //car.Speed = 100;
+
+            //car.Forward();
+
+            //Airline airline = new Airline();
+
+            //IMoveable moveable = airline;
+            //moveable.Forward();
+
+
+            //IFlyable flyable = airline;
+            //flyable.Forward();
         }
     }
 }
