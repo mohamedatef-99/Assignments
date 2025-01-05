@@ -49,6 +49,7 @@ namespace OOP_03
             //myType.Print(); 
             #endregion
 
+            #region Interface Example
             //SeriesByTwo series = new SeriesByTwo();
             //PrintNum(series);
 
@@ -64,7 +65,71 @@ namespace OOP_03
 
 
             //IFlyable flyable = airline;
-            //flyable.Forward();
+            //flyable.Forward(); 
+            #endregion
+
+            #region Shallow Copy VS Deep Copy
+            // Shallow Copy VS Deep Copy
+
+            //Shallow Copy
+
+            //int[] arr1 = { 1, 2, 3, 4, 5 };
+            //int[] arr2 = { 6, 7, 8, 9, 10 };
+
+            //Console.WriteLine($"Arr01: {arr1.GetHashCode()}");
+            //Console.WriteLine($"Arr02: {arr2.GetHashCode()}");
+
+            //arr2 = arr1; // Shallow Copy
+            ////{ 1, 2, 3, 4, 5 } --> Has Two Reference arr1, arr2
+            ////{ 6, 7, 8, 9, 10 } --> Unerechable code
+
+            //Console.WriteLine($"Arr01: {arr1.GetHashCode()}");
+            //Console.WriteLine($"Arr02: {arr2.GetHashCode()}");
+
+            //// Identity (Address) + Object State (Data)
+
+
+            //// Deep Copy
+
+            //arr2 = (int[]) arr1.Clone(); // Deep Copy
+            //                             // Clone Method will copy the object state of the caller
+            //                             // assign the new object to the arr2, will generate new identity
+
+            //Console.WriteLine($"Arr01: {arr1.GetHashCode()}");
+            //Console.WriteLine($"Arr02: {arr2.GetHashCode()}");
+
+
+            //string[] arr1 = {"Ahmed", "Mohamed" };
+            //string[] arr2 = { "Ali", "mahmoud" };
+
+            //Console.WriteLine($"Arr01: {arr1.GetHashCode()}");
+            //Console.WriteLine($"Arr02: {arr2.GetHashCode()}");
+
+            //arr2 = arr1;
+
+            //Console.WriteLine($"Arr01: {arr1.GetHashCode()}");
+            //Console.WriteLine($"Arr02: {arr2.GetHashCode()}");
+
+            //arr2[0] = "Hassan";
+            //Console.WriteLine(arr2[0]);
+
+
+            //string[] arr1 = { "Ahmed", "Mohamed" };
+            //string[] arr2 = { "Ali", "mahmoud" };
+
+            //Console.WriteLine($"Arr01: {arr1.GetHashCode()}");
+            //Console.WriteLine($"Arr02: {arr2.GetHashCode()}");
+
+            //arr2 = (string[]) arr1.Clone();
+
+            //Console.WriteLine($"Arr01: {arr1.GetHashCode()}");
+            //Console.WriteLine($"Arr02: {arr2.GetHashCode()}");
+
+            //arr2[0] = "Hassan";
+            //Console.WriteLine(arr2[0]); 
+            #endregion
+
+
         }
     }
 }
