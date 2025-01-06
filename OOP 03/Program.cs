@@ -1,4 +1,5 @@
-﻿using OOP_03.Interface;
+﻿using OOP_03.Assignment_OOP_03;
+using OOP_03.Interface;
 
 namespace OOP_03
 {
@@ -129,6 +130,102 @@ namespace OOP_03
             //Console.WriteLine(arr2[0]); 
             #endregion
 
+            // Assignment
+            #region Part 1
+            // Part 1
+
+            /*
+            Question 1:
+            What is the primary purpose of an interface in C#?
+            Answer: b) To define a blueprint for a class 
+            */
+
+            /*
+             Question 2:
+             Which of the following is NOT a valid access modifier for interface members in C#?
+             Answer: a) private
+             */
+
+            /*
+             Question 3:
+             Can an interface contain fields in C#?
+             Answer: b) No
+             */
+            /*
+             Question 4:
+             In C#, can an interface inherit from another interface?
+             Answer: b) Yes, interfaces can inherit from multiple interfaces
+             */
+
+            /*
+             Question 5:
+             Which keyword is used to implement an interface in a class in C#?
+             Answer: d) implements
+            */
+
+            /*
+             Question 6:
+             Can an interface contain static methods in C#?
+             Answer: a) Yes
+            */
+
+            /*
+             Question 7:
+             In C#, can an interface have explicit access modifiers for its members?
+             Answer: b) No, all members are implicitly public
+            */
+
+            /*
+            Question 8:
+            What is the purpose of an explicit interface implementation in C#?
+            Answer: b) To provide a clear separation between interface and class members
+           */
+
+            /*
+            Question 9:
+            In C#, can an interface have a constructor?
+            Answer: b) No, interfaces cannot have constructors
+           */
+
+            /*
+            Question 10:
+            How can a C# class implement multiple interfaces?
+            Answer: c) By separating interface names with commas
+           */
+            #endregion
+
+            // Part 2
+            #region Question 01
+            // Question 01
+
+            ICircle circle = new Circle(5);
+            circle.DisplayShapeInfo();
+
+            IRectangle rectangle = new Rectangle(4, 6);
+            rectangle.DisplayShapeInfo();
+            #endregion
+
+            #region Question 02
+            // Question 02
+            IAuthenticationService authService = new BasicAuthenticationService();
+            authService.AuthenticateUser("Mohamed", "Mohamed");
+            authService.AuthorizeUser("Mohamed", "Admin");
+
+            Console.WriteLine(authService.AuthenticateUser("Mohamed", "Mohamed"));
+            Console.WriteLine(authService.AuthorizeUser("Mohamed", "Admin"));
+            #endregion
+
+            #region Question 03
+            // Question 03
+            INotificationService emailService = new EmailNotificationService();
+            emailService.SendNotification("mohamed@mail.com", "Email message");
+
+            INotificationService smsService = new SmsNotificationService();
+            smsService.SendNotification("0111222555", "SMS message");
+
+            INotificationService pushService = new PushNotificationService();
+            pushService.SendNotification("push", "Push message"); 
+            #endregion
 
         }
     }
