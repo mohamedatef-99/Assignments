@@ -202,7 +202,17 @@ namespace OOP_03
             circle.DisplayShapeInfo();
 
             Rectangle rectangle = new Rectangle(4, 6);
-            rectangle.DisplayShapeInfo(); 
+            rectangle.DisplayShapeInfo();
+            #endregion
+
+            #region Question 02
+            // Question 02
+            BasicAuthenticationService authService = new BasicAuthenticationService();
+            authService.AuthenticateUser("Mohamed", "Mohamed");
+            authService.AuthorizeUser("Mohamed", "Admin");
+
+            Console.WriteLine(authService.AuthenticateUser("Mohamed", "Mohamed"));
+            Console.WriteLine(authService.AuthorizeUser("Mohamed", "Admin")); 
             #endregion
 
 
