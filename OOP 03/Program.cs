@@ -1,4 +1,5 @@
-﻿using OOP_03.Interface;
+﻿using OOP_03.Assignment_OOP_03;
+using OOP_03.Interface;
 
 namespace OOP_03
 {
@@ -190,7 +191,18 @@ namespace OOP_03
             Question 10:
             How can a C# class implement multiple interfaces?
             Answer: c) By separating interface names with commas
-           */ 
+           */
+            #endregion
+
+            // Part 2
+            #region Question 01
+            // Question 01
+
+            Circle circle = new Circle(5);
+            circle.DisplayShapeInfo();
+
+            Rectangle rectangle = new Rectangle(4, 6);
+            rectangle.DisplayShapeInfo(); 
             #endregion
 
 
