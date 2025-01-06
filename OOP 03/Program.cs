@@ -198,23 +198,34 @@ namespace OOP_03
             #region Question 01
             // Question 01
 
-            Circle circle = new Circle(5);
+            ICircle circle = new Circle(5);
             circle.DisplayShapeInfo();
 
-            Rectangle rectangle = new Rectangle(4, 6);
+            IRectangle rectangle = new Rectangle(4, 6);
             rectangle.DisplayShapeInfo();
             #endregion
 
             #region Question 02
             // Question 02
-            BasicAuthenticationService authService = new BasicAuthenticationService();
+            IAuthenticationService authService = new BasicAuthenticationService();
             authService.AuthenticateUser("Mohamed", "Mohamed");
             authService.AuthorizeUser("Mohamed", "Admin");
 
             Console.WriteLine(authService.AuthenticateUser("Mohamed", "Mohamed"));
-            Console.WriteLine(authService.AuthorizeUser("Mohamed", "Admin")); 
+            Console.WriteLine(authService.AuthorizeUser("Mohamed", "Admin"));
             #endregion
 
+            #region Question 03
+            // Question 03
+            INotificationService emailService = new EmailNotificationService();
+            emailService.SendNotification("mohamed@mail.com", "Email message");
+
+            INotificationService smsService = new SmsNotificationService();
+            smsService.SendNotification("0111222555", "SMS message");
+
+            INotificationService pushService = new PushNotificationService();
+            pushService.SendNotification("push", "Push message"); 
+            #endregion
 
         }
     }
