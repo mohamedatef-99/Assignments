@@ -25,6 +25,10 @@ namespace OOP_04
 
             //rectangle.print(); 
             #endregion
+
+            #region Interface Vs Abstract Class
+            //Interface Vs Abstract Class 
+            #endregion
         }
     }
 }
