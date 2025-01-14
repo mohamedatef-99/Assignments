@@ -38,27 +38,26 @@ namespace OOP_04
 
             // Complex Number : 
 
-            Complex c01 = new Complex() { Real = 3, Imag = 4 };
-            Complex c02 = new Complex() { Real = 3, Imag = 4 };
+            //Complex c01 = new Complex() { Real = 3, Imag = 4 };
+            //Complex c02 = new Complex() { Real = 3, Imag = 4 };
 
-            Console.WriteLine(c01);
-            Console.WriteLine(c02);
+            //Console.WriteLine(c01);
+            //Console.WriteLine(c02);
 
-            Complex C03 = c01 + c02;
-            Console.WriteLine(C03);
+            //Complex C03 = c01 + c02;
+            //Console.WriteLine(C03);
 
-            // ++ --
-            int x = 12;
-            x++;
-            Console.WriteLine(x);
+            //// ++ --
+            //int x = 12;
+            //x++;
+            //Console.WriteLine(x);
 
-            c01++;
-            Console.WriteLine(c01);
+            //c01++;
+            //Console.WriteLine(c01);
 
-            c01--;
-            Console.WriteLine(c01); 
+            //c01--;
+            //Console.WriteLine(c01); 
             #endregion
-
         }
     }
 }
