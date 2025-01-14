@@ -115,7 +115,7 @@ namespace OOP_04
             //Console.WriteLine(Utilities.CmToInch(254)); 
             #endregion
 
-
+            // Sealed : C# keyword [class - method - property]  Cant override or inheret
 
         }
     }
