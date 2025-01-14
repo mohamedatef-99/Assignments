@@ -1,4 +1,5 @@
 ﻿using OOP_04.Abstracts;
+using OOP_04.Mapping;
 using OOP_04.Operator_overloading;
 
 namespace OOP_04
@@ -58,6 +59,45 @@ namespace OOP_04
             //c01--;
             //Console.WriteLine(c01); 
             #endregion
+
+            #region User Defined Casting
+            //double x = 12;
+            //int y = (int)x;
+
+            //Complex C01 = new Complex() { Real = 3, Imag = 4 };
+
+            //string s = (string)C01;
+            //// (string) : Convert complex number to string
+
+            //// Operator Overloading
+            //// User-Defined Casting Operator
+
+            //Console.WriteLine(s);
+
+            //int z = (int)C01;
+            //Console.WriteLine(z);
+
+            //// Mapping : Convert From DataType to DataType
+
+
+            //// Code Firt
+            //// DB Firt
+
+            //User user = new User();
+
+            //// Mannual Mapping
+            //UserDto userDto = new UserDto()
+            //{
+            //    Email = user.Email,
+            //    Name = user.Name,
+
+            //};
+
+            //// Casting Operator
+
+            //// Automapper : Mapping Automatic 
+            #endregion
+
         }
     }
 }

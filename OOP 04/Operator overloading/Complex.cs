@@ -49,6 +49,21 @@ namespace OOP_04.Operator_overloading
             return complex;
         }
 
+        // User-Defined Casting Operator
+        // Complex ---> String
+        // Function : public - Static
+
+        // Implicit - Explicit casting
+        public static explicit operator string(Complex complex)
+        {
+            return complex.ToString();
+        }
+
+        public static implicit operator int(Complex complex)
+        {
+            return complex.Real;
+        }
+
         public override string ToString()
         {
             return $"{Real} + {Imag} i";
