@@ -9,6 +9,7 @@ namespace OOP_04
     {
         static void Main(string[] args)
         {
+            #region Demo
             #region Abstraction
             //// 4. Abstraction: 
             //// abstract : C# keyword [class - methods - properties]
@@ -115,7 +116,10 @@ namespace OOP_04
             //Console.WriteLine(Utilities.CmToInch(254)); 
             #endregion
 
-            // Sealed : C# keyword [class - method - property]  Cant override or inheret
+            // Sealed : C# keyword [class - method - property]  Cant override or inheret 
+            #endregion
+
+
 
         }
     }
