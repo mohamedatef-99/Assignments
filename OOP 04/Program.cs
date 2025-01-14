@@ -1,6 +1,7 @@
 ﻿using OOP_04.Abstracts;
 using OOP_04.Mapping;
 using OOP_04.Operator_overloading;
+using OOP_04.Static;
 
 namespace OOP_04
 {
@@ -97,6 +98,24 @@ namespace OOP_04
 
             //// Automapper : Mapping Automatic 
             #endregion
+
+            #region Static
+            // Static : C# keyword [class - method - property - constructor - attributes]
+            // static class
+            // static method
+            // static property
+            // static consturctor
+            // static attributes
+
+            //Utilities U01 = new Utilities();
+            //Utilities U02 = new Utilities();
+            //Utilities U03 = new Utilities();
+            //Console.WriteLine(Utilities.CmToInch(254));
+            //Console.WriteLine(Utilities.CmToInch(254));
+            //Console.WriteLine(Utilities.CmToInch(254)); 
+            #endregion
+
+
 
         }
     }
