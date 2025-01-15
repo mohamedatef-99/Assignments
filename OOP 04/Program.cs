@@ -181,6 +181,35 @@ namespace OOP_04
             //Console.WriteLine("clone: " + clone); 
             #endregion
 
+            #region Second Project
+            // Second Project
+            //int x, y;
+            //bool flag;
+
+            //do
+            //{
+            //    Console.Write("X: ");
+            //    flag = int.TryParse(Console.ReadLine(), out x);
+            //} while (!flag);
+
+            //do
+            //{
+            //    Console.Write("Y: ");
+            //    flag = int.TryParse(Console.ReadLine(), out y);
+            //} while (!flag);
+
+            //int add = Maths.Add(x, y);
+            //int sub = Maths.Subtract(x, y);
+            //int divide = Maths.Divide(x, y);
+            //int multiply = Maths.Multiply(x, y);
+
+            //Console.WriteLine($"sum: {add}");
+            //Console.WriteLine($"sub: {sub}");
+            //Console.WriteLine($"divide: {divide}");
+            //Console.WriteLine($"multiply: {multiply}");
+
+            #endregion
+
         }
     }
 }
