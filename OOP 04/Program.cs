@@ -1,4 +1,5 @@
 ﻿using OOP_04.Abstracts;
+using OOP_04.Assignment;
 using OOP_04.Mapping;
 using OOP_04.Operator_overloading;
 using OOP_04.Static;
@@ -7,6 +8,33 @@ namespace OOP_04
 {
     internal class Program
     {
+        public static Point3D ReadInput(string pointName)
+        {
+            int x, y, z;
+            bool flag;
+
+            Console.WriteLine($"\nEnter coordinates for {pointName}:");
+
+            do
+            {
+                Console.Write("Enter X coordinate: ");
+                flag = int.TryParse(Console.ReadLine(), out x);
+            } while (!flag);
+
+            do
+            {
+                Console.Write("Enter Y coordinate: ");
+                flag = int.TryParse(Console.ReadLine(), out y);
+            } while (!flag);
+
+            do
+            {
+                Console.Write("Enter Z coordinate: ");
+                flag = int.TryParse(Console.ReadLine(), out z);
+            } while (!flag);
+
+            return new Point3D(x, y, z);
+        }
         static void Main(string[] args)
         {
             #region Demo
@@ -119,7 +147,39 @@ namespace OOP_04
             // Sealed : C# keyword [class - method - property]  Cant override or inheret 
             #endregion
 
+            #region Firt Project
+            //// First Project
+            //Point3D p1 = ReadInput("P1");
+            //Console.WriteLine(p1);
 
+            //Point3D p2 = ReadInput("P2");
+            //Console.WriteLine(p2);
+
+            //if (p1 == p2)
+            //{
+            //    Console.WriteLine("points are equal");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("points are not equal");
+            //}
+
+            //Point3D[] points =
+            //{
+            //    new Point3D(1,3,3),
+            //    new Point3D(1,0,1),
+            //    new Point3D(1,0,2),
+            //};
+            //Array.Sort(points);
+            //Console.WriteLine("sorted points: ");
+            //foreach (var point in points)
+            //{
+            //    Console.WriteLine(point);
+            //}
+
+            //Point3D clone = (Point3D)p1.Clone();
+            //Console.WriteLine("clone: " + clone); 
+            #endregion
 
         }
     }
