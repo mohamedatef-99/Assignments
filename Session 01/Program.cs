@@ -50,6 +50,25 @@
             //Console.WriteLine($"b: {y}"); 
             #endregion
 
+            // Linear Search
+
+            #region Linear Search
+            //int[] Nums = { 1, 2, 3,64,64,6,58,6,2,4 };
+
+            //int index = Helper.LinearSearch(Nums, 6);
+            //Console.WriteLine($"index: {index}");
+
+            //Employee E01 = new Employee() { id = 1, name = "Ahmed", age = 20, salary = 1000};
+            //Employee E02 = new Employee() { id = 2, name = "Ahmed", age = 20, salary = 1000};
+            //Employee E03 = new Employee() { id = 3, name = "Ahmed", age = 20, salary = 1000};
+            //Employee E04 = new Employee() { id = 4, name = "Ahmed", age = 20, salary = 1000};
+            //Employee E05 = new Employee() { id = 5, name = "Ahmed", age = 20, salary = 1000};
+            //Employee[] employees = {E01, E02, E03, E04, E05};
+
+            //int index = Helper.LinearSearch(employees, E01);
+            //Console.WriteLine(index); 
+            #endregion
+
             
         }
     }
