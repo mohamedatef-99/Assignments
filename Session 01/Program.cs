@@ -69,7 +69,26 @@
             //Console.WriteLine(index); 
             #endregion
 
-            
+            #region Equality in Class or Struct
+            // Equality in Class or Struct
+            // Equals in Class: Has Equals Function which inherited from object class ==> compare ref
+            // Equals in Struct: Has Equals Function which inherited from object class ==> compare data
+            // Note: Struct Dont have Implementaion for the == Opearator
+
+            //Employee E01 = new Employee() { id = 1, name = "Ahmed", age = 20, salary = 1000 };
+            //Employee E02 = new Employee() { id = 1, name = "Ahmed", age = 20, salary = 1000 };
+
+            //if (E01.Equals(E02))
+            //{
+            //    Console.WriteLine("equal");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("not equal");
+            //} 
+            #endregion
+
+
         }
     }
 }
