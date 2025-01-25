@@ -88,6 +88,7 @@
             //} 
             #endregion
 
+            #region Bubble Sort
             // Sorting: Bubble Sort
 
             //int[] numbers = { 1, 20, 3, 5,212,2,8,65,14 };
@@ -95,7 +96,10 @@
             //Helper.PrintArray(numbers);
             //Console.WriteLine("after");
             //Helper.BubbleSort(numbers);
-            //Helper.PrintArray(numbers);
+            //Helper.PrintArray(numbers); 
+            #endregion
+
+
 
         }
     }

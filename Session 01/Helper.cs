@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,9 +7,18 @@ using System.Threading.Tasks;
 
 namespace Session_01
 {
-    internal static class Helper
+    internal static class Helper<T01> where T01 : class, /*// struct // Point // notnull*/ IComparable, ICloneable, IComparer, new()
     {
-       public static void SWAP<T>(ref T x, ref T y)
+        // Generic Constraints:
+        // 1. Primary Constraints
+                // the type is class or struct or special type like point or enum or notnull
+        // 2. Secondary
+        //      // T implement specifice interface
+        // 3. Constructor Constraints
+        //    new()
+
+
+        public static void SWAP<T>(ref T x, ref T y)
         {
             T Temp = x;
             x = y;
