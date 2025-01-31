@@ -12,8 +12,10 @@
     // these function must be have the same signature of the delegate
     // Regardless function name, param name or, access modifiers
 
+    public delegate bool ConditionFuncDelegate(int a);
     internal class Program
     {
+        #region PrintArray
         //public static void PrintArray<T>(T[] values)
         //{
         //    Console.WriteLine();
@@ -22,7 +24,39 @@
         //        Console.Write($"{item} ");
         //    }
         //    Console.WriteLine();
-        //}
+        //} 
+        #endregion
+
+        #region FindOddNumbers
+        //public static List<int> FindOddNumbers(List<int> list, ConditionFuncDelegate reference)
+        //{
+        //    List<int> Result = new List<int>();
+        //    if(list?.Count > 0)
+        //    {
+        //        for(int i =0; i < list.Count; i++)
+        //        {
+        //            if (reference.Invoke(list[i]))
+        //            {
+        //                Result.Add(list[i]);
+        //            }
+        //        }
+        //    }
+        //    return Result;
+        //} 
+        #endregion
+
+        #region PrintList
+        //public static void PrintList<T>(List<T> values)
+        //{
+        //    Console.WriteLine();
+        //    foreach (T item in values)
+        //    {
+        //        Console.Write($"{item} ");
+        //    }
+        //    Console.WriteLine();
+        //} 
+        #endregion
+
         static void Main(string[] args)
         {
             #region Delegate Overview
@@ -48,6 +82,14 @@
             //SortingAlgorithms.BubbleSort(numbers);
             //PrintArray(numbers); 
             #endregion
+            
+            #region Delegate EX03
+
+            //List<int> Numbers = Enumerable.Range(1, 100).ToList();
+            //List<int> OddNumbers = FindOddNumbers(Numbers, ConditionsFunction.CheckOdd);
+            //PrintList(OddNumbers); 
+            #endregion
+
 
         }
     }
