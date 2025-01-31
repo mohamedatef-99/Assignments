@@ -14,6 +14,15 @@
 
     internal class Program
     {
+        //public static void PrintArray<T>(T[] values)
+        //{
+        //    Console.WriteLine();
+        //    foreach (T item in values)
+        //    {
+        //        Console.Write($"{item} ");
+        //    }
+        //    Console.WriteLine();
+        //}
         static void Main(string[] args)
         {
             #region Delegate Overview
@@ -33,6 +42,12 @@
             //Console.WriteLine(count); 
             #endregion
 
+            #region Delegate EX02
+            //int[] numbers = { 10, 4, 8, 1, 0, 2, 5, 7, 3 };
+            //PrintArray(numbers);
+            //SortingAlgorithms.BubbleSort(numbers);
+            //PrintArray(numbers); 
+            #endregion
 
         }
     }
