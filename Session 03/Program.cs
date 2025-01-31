@@ -82,12 +82,23 @@
             //SortingAlgorithms.BubbleSort(numbers);
             //PrintArray(numbers); 
             #endregion
-            
+
             #region Delegate EX03
 
             //List<int> Numbers = Enumerable.Range(1, 100).ToList();
             //List<int> OddNumbers = FindOddNumbers(Numbers, ConditionsFunction.CheckOdd);
             //PrintList(OddNumbers); 
+            #endregion
+
+            #region Built-in Delegate
+            //// Built-in Delegate
+            //// 1. Predicate
+            //// 2. Func
+            //// 3. Action
+
+            //Predicate<int> predicate = ConditionsFunction.CheckOdd;
+            //bool result = predicate.Invoke(5);
+            //Console.WriteLine(result); 
             #endregion
 
 
