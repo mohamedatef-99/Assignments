@@ -15,6 +15,7 @@
     public delegate bool ConditionFuncDelegate(int a);
     internal class Program
     {
+        #region Demo
         #region PrintArray
         //public static void PrintArray<T>(T[] values)
         //{
@@ -64,11 +65,12 @@
         //    Action action = () => Console.WriteLine("Hello Wordl");
 
         //} 
+        #endregion 
         #endregion
-
 
         static void Main(string[] args)
         {
+            #region Demo
             #region Delegate Overview
             // Delegate: C# Feature
             // C# Pure OOP
@@ -118,6 +120,8 @@
             //var x = "hell";
             //var predicate = ConditionsFunction 
             #endregion.CheckOdd;
+
+            #endregion
 
 
         }
