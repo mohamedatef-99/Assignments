@@ -101,6 +101,14 @@
             //Console.WriteLine(result); 
             #endregion
 
+            #region Var KeyWord
+            // C# keyword
+            // var
+            //var x = 10;
+            //var x = "hell";
+            //var predicate = ConditionsFunction 
+            #endregion.CheckOdd;
+
 
         }
     }
