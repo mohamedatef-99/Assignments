@@ -57,6 +57,16 @@
         //} 
         #endregion
 
+        #region Function Return
+        //public static Action Fun01()
+        //{
+        //    //Action action = delegate () { Console.WriteLine("Hello Wordl"); }
+        //    Action action = () => Console.WriteLine("Hello Wordl");
+
+        //} 
+        #endregion
+
+
         static void Main(string[] args)
         {
             #region Delegate Overview
