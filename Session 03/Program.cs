@@ -1,5 +1,8 @@
-﻿namespace Session_03
+﻿using Session_03.Assignment;
+
+namespace Session_03
 {
+    #region Delegates
     // Class
     // Struct
     // Enum
@@ -13,8 +16,12 @@
     // Regardless function name, param name or, access modifiers
 
     public delegate bool ConditionFuncDelegate(int a);
+    #endregion
+
+    internal delegate string BookDelegate(Book book);
     internal class Program
     {
+
         #region Demo
         #region PrintArray
         //public static void PrintArray<T>(T[] values)
@@ -65,8 +72,17 @@
         //    Action action = () => Console.WriteLine("Hello Wordl");
 
         //} 
-        #endregion 
         #endregion
+        #endregion
+
+        public static void ProccessBooks(List<Book> books, BookDelegate reference)
+        {
+            foreach (var book in books)
+            {
+                Console.WriteLine(reference(book));
+            }
+
+        }
 
         static void Main(string[] args)
         {
@@ -123,7 +139,52 @@
 
             #endregion
 
+            #region Assignment
+            // part 01
+            //Book book = new("123", "C#","ahmed", DateTime.Now, 10.00m);
+            //Console.WriteLine(book);
+            //string bookTitle = BookFunctions.GetTitle(book);
+            //string[] bookAuthors = BookFunctions.GetAuthors(book);
+            //decimal bookPrice = BookFunctions.GetPrice(book);
+            //DateTime bookPublicationDate = BookFunctions.GetPublicationDate(book);
+            //string bookISBN = BookFunctions.GetISBN(book);
+            //Console.WriteLine($"Book Title: {bookTitle}");
+            //Console.WriteLine($"Book Authors: {bookAuthors}");
+            //Console.WriteLine($"Book Price: {bookPrice}");
+            //Console.WriteLine($"Book Publication Date: {bookPublicationDate}");
+            //Console.WriteLine($"Book ISBN: {bookISBN}"); 
+
+
+
+            //List<Book> books = new List<Book>
+            //{
+            //    new Book("123", "C# Programming","ahmed", DateTime.Now, 10.1m),
+            //    new Book("1234", "Advanced C#","ahmed", DateTime.Now, 10.0m)
+            //};
+
+            //// user defined delegate
+            //BookDelegate getISBN = new BookDelegate(BookFunctions.GetISBN);
+            //ProccessBooks(books, getISBN);
+
+            //// built-in delegate
+            //Func<Book, string> getISBNFunc = BookFunctions.GetISBN;
+            //foreach (Book book in books)
+            //{
+            //    Console.WriteLine(getISBNFunc.Invoke(book));
+            //}
+
+            //// anonymous methodd
+            //ProccessBooks(books, delegate (Book book) { return book.ISBN; });
+
+            //// lambd expression
+            //Func<Book, DateTime> lambdaExpression = book => book.PublicationDate;
+            //foreach (var book in books)
+            //{
+            //    Console.WriteLine(lambdaExpression(book));
+            //}
+            #endregion
 
         }
     }
+
 }
