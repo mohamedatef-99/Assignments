@@ -50,6 +50,14 @@
             // 3. The properties have the same data type 
             #endregion
 
+            #region Extension methods
+            // Extension methods
+
+            int num = 101212;
+
+            var result = IntExtension.Reverse(num);
+            Console.WriteLine(result); 
+            #endregion
 
 
         }
