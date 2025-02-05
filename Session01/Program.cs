@@ -34,6 +34,22 @@
             // it like var in JS 
             #endregion
 
+            #region Anonymous type
+            // Anonymous type
+            // Employee E01 = new Employee { Id = 1, Name = "Ahmed", Salary = 1000 };
+            //var E01 = new { Id = 1, Name = "Ahmed", Salary = 1000 };
+            //Console.WriteLine(E01.Id);
+
+            //E01.Id = 2; // Invalid : Immutable cant change its value after creation
+
+            //Console.WriteLine(E01.GetType().Name);
+
+            // The same anonymous type as long as:
+            // 1. The properties are the same
+            // 2. The properties are in the same order
+            // 3. The properties have the same data type 
+            #endregion
+
 
 
         }
