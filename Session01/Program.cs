@@ -53,10 +53,38 @@
             #region Extension methods
             // Extension methods
 
-            int num = 101212;
+            //int num = 101212;
 
-            var result = IntExtension.Reverse(num);
-            Console.WriteLine(result); 
+            //var result = IntExtension.Reverse(num);
+            //Console.WriteLine(result);
+            #endregion
+
+            #region LINQ
+            // LINQ: Language Integrated Query
+            //     : 40+ Extension methods (LINQ Operators) Against any data [Data in sequence]
+            //     : Regardless Data store
+            //     : 13 Category
+            //     : LINQ Operators Exists in built-in class "Enumerable"
+
+
+            // Sequence : Object From Class Implement Interface "IEnumerable"
+            // local Sequence: L2O (LINQ to Object), L2XML (LINQ to XML)
+            // Remote Sequence: L2S (LINQ to SQL), L2EF (LINQ to Entity Framework), L2D (LINQ to Dataset)
+
+
+            // Input Sequence -> LINQ Operator -> Output Sequence
+            // Input Sequence -> LINQ Operator -> One Value
+            //                -> LINQ Operator -> Output Sequence
+
+            //List<int> list = new List<int>() { 1,2,3,4,5,6,7,8};
+
+            //var result01 = Enumerable.Where(list, n => n % 2 == 0);
+            //var result01 = Enumerable.Any(list, n => n % 2 == 0);
+            //var result01 = Enumerable.Range(1,10);
+            //foreach (var item in result01)
+            //{
+            //    Console.WriteLine(item);
+            //} 
             #endregion
 
 
