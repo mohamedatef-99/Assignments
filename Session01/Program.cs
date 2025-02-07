@@ -129,6 +129,28 @@
              */
             #endregion
 
+            #region LINQ EXecution Ways
+            // LINQ EXecution Ways
+            // 1. Differed execution way   : 10 Category
+            // 2. Immediate execution way  : 3 Category [Elements Operator, Casting Operators, Aggregate Operators]
+
+            //List<int> Numbers = new List<int>() { 1,2,3,4,5,6,7,8,9};
+            //var result = Numbers.Where(X => X % 2 == 0); // Differed
+            //Numbers.AddRange(new int[]{ 11,22});
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine($"{item}");
+            //}
+
+            //List<int> Numbers = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            //var result = Numbers.Where(X => X % 2 == 0).ToList(); // Immediate
+            //Numbers.AddRange(new int[] { 11, 22 });
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine($"{item}");
+            //} 
+            #endregion
+
 
 
         }
