@@ -1,4 +1,6 @@
-﻿namespace Session01
+﻿using static Session01.ListGenerator;
+
+namespace Session01
 {
     internal class Program
     {
@@ -151,7 +153,18 @@
             //} 
             #endregion
 
+            #region Setup Data
+            // Setup Data
+            //Console.WriteLine(ProductList[0]);
+            //Console.WriteLine(CustomerList[0]);
 
+            //ProductList.Where(P => P.UnitsInStock == 0);
+            //var result = CustomerList.Where(P => P.City == "Berlin");
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine($"{item}");
+            //} 
+            #endregion
 
         }
     }
