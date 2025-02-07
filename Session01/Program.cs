@@ -87,6 +87,49 @@
             //} 
             #endregion
 
+            #region LINQ Syntax
+            // LINQ Syntax
+
+            // 1. Fluent Syntax
+            // Use LINQ Methods
+            // 1.1 LINQ Opearator as => Class Memeber method through class "Enumerable"
+
+            //List<int> numbers = new List<int>() { 1,2,3,4,5,6,7,8,9};
+            //var reuslt = Enumerable.Where(numbers, x => x % 2 == 0);
+            //foreach (var item in reuslt)
+            //{
+            //    Console.WriteLine($"{item}");
+            //}
+
+            // 1.2 LINQ Operator as => Extenision method through sequence
+
+            //List<int> numbers = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            //var result = numbers.Where(x => x % 2 == 0);
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine($"{item}");
+            //}
+
+            // 2. Query Syntax [Query Experssion] like SQL style
+            // Start from
+            // end select, group by
+
+            //List<int> numbers = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            //var reuslt = from N in numbers
+            //             where N % 2 == 0
+            //             select N;
+            //foreach (var item in reuslt)
+            //{
+            //    Console.WriteLine($"{item}");
+            //}
+            /*
+             * select n
+             * from numbers
+             * where n %2==0
+             */
+            #endregion
+
+
 
         }
     }
