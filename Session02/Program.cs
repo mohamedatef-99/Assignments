@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.ComponentModel;
 using static Session02.ListGenerator;
 
 namespace Session02
@@ -63,6 +64,56 @@ namespace Session02
 
             #endregion
 
+            #region Transformation Operators - Select / SelectMany
+            // 2. Transformation Operators - Select / SelectMany
+
+            // Fluent Syntax
+            //var result = ProductList.Select(P => P.ProductName);
+
+            // Query Syntax
+            //var result = from P in ProductList
+            //             select P.ProductName;
+
+            // Fluent Syntax
+            //var result = ProductList.Where(P => P.UnitsInStock > 0 && P.Category == "Seafood")
+            //    .Select(P => new  { P.ProductName, 
+            //        P.Category, 
+            //        OldPrice = P.UnitPrice, 
+            //        NewPrice = P.UnitPrice - P.UnitPrice * 0.1M 
+            //    });
+
+            // Query Syntax
+            //var result = from P in ProductList
+            //             where P.UnitsInStock > 0 && P.Category == "Seafood"
+            //             select new
+            //             {
+            //                 P.ProductName,
+            //                 P.Category,
+            //                 OldPrice = P.UnitPrice,
+            //                 NewPrice = P.UnitPrice - P.UnitPrice * 0.1M
+            //             };
+
+            // Fluent Syntax
+            //var result = CustomerList.Select(C => C.CustomerName);
+            //var result = CustomerList.Select(C => C.Orders); // If One of the property is sequence
+            //var result = CustomerList.SelectMany(C => C.Orders); // If One of the property is sequence
+
+            // Query Syntax
+            //var result = from C in CustomerList
+            //             from O in C.Orders
+            //             select O;
+
+            // Indexed Select Valid Only in Fluent Syntax
+            // Can't Be Written using Query Syntax
+            // Fluent Syntax
+            //var result = ProductList.Select((P, I) => new { I, P.ProductName })
+            //    .Where(P => P.I < 5);
+
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //} 
+            #endregion
 
 
         }
