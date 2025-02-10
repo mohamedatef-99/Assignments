@@ -115,6 +115,54 @@ namespace Session02
             //} 
             #endregion
 
+            #region Ordering Operators 
+            // 3. Ordering Operators 
+
+            // Sorting
+
+            //var result = ProductList.OrderBy(P => P.UnitPrice);
+            //var result = ProductList.OrderBy(P => P.UnitsInStock)
+            //    .Select(P => 
+            //    new {P.ProductName, P.UnitPrice, P.UnitsInStock });
+
+            //var result = ProductList.OrderByDescending(P => P.UnitsInStock)
+            //    .Select(P =>
+            //    new { P.ProductName, P.UnitPrice, P.UnitsInStock });
+
+            //var result = ProductList.OrderByDescending(P => P.UnitsInStock)
+            //    .ThenBy(P => P.UnitPrice)
+            //   .Select(P =>
+            //   new { P.ProductName, P.UnitPrice, P.UnitsInStock });
+
+            //var result = ProductList.OrderByDescending(P => P.UnitsInStock)
+            //    .ThenByDescending(P => P.UnitPrice)
+            //   .Select(P =>
+            //   new { P.ProductName, P.UnitPrice, P.UnitsInStock });
+
+            //var result = ProductList.Where(P=> P.Category == "Seafood").OrderByDescending(P => P.UnitsInStock)
+            //   .ThenByDescending(P => P.UnitPrice)
+            //  .Select(P =>
+            //  new { P.ProductName, P.UnitPrice, P.UnitsInStock });
+
+
+            // Query Syntax
+            //var result = from P in ProductList
+            //             orderby P.UnitPrice descending
+            //             select P;
+
+            //var result = from P in ProductList
+            //             orderby P.UnitPrice, P.UnitsInStock descending
+            //             select P;
+
+
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //} 
+            #endregion
+
+
+
 
         }
     }
