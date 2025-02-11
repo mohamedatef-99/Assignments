@@ -203,6 +203,47 @@ namespace Session02
             //Console.WriteLine(result?.ProductName ?? "NA"); 
             #endregion
 
+            #region Aggregate Operators - Immediate Exection
+            // Aggregate Operators - Immediate Exection
+
+            // Count - Sum - Max - Min - Avg
+
+
+            //var result = ProductList.Count(); // LINQ Method
+            //var result = ProductList.Count; // Property
+
+            //var result = ProductList.Count(P => P.UnitsInStock == 0);
+
+            //var result = ProductList.Where(P => P.UnitsInStock == 0).Count();
+
+            //var result = ProductList.Sum(P => P.UnitPrice);
+            //var result = ProductList.Sum(P => P.UnitsInStock);
+
+            //var result = ProductList.Average(P => P.UnitPrice);
+
+            //var result = ProductList.Max(); // based on ICompareable (Price)
+            //var result = ProductList.Max(new ProductCoparerUnitInStock()); // based on IComparer (UnitsInStock)
+            //var result = ProductList.Max(P => P.UnitPrice); // max price
+            //var result = ProductList.Max(P => P.UnitsInStock); // max units in stock
+
+            //var MaxPrice = ProductList.Max(P => P.UnitPrice); // max price
+            //var result = ProductList.FirstOrDefault(P => P.UnitPrice == MaxPrice);
+
+            //var result = ProductList.MaxBy(P => P.UnitPrice);// return Product that has max price
+
+
+            //var result = ProductList.Min();
+            //var result = ProductList.Min(new ProductCoparerUnitInStock());
+            //var result = ProductList.Min(P => P.UnitPrice);
+
+            //var result = ProductList.MinBy(P => P.UnitPrice);
+
+            //List<string> names = new List<string>() { "ahmed", "mohamedd" };
+
+            //var result = names.Aggregate((S01,S02) => $"{S01}, {S02}");
+
+            //Console.WriteLine(result); 
+            #endregion
 
 
         }
