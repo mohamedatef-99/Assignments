@@ -245,6 +245,21 @@ namespace Session02
             //Console.WriteLine(result); 
             #endregion
 
+            #region Casting Operators - Immediate Execution
+            // 6. Casting Operators - Immediate Execution
+
+            //List<Product> list = (List<Product>) ProductList.Where(P => P.UnitsInStock == 0); // Invalid
+            //List<Product> list = ProductList.Where(P => P.UnitsInStock == 0).ToList(); // list
+            //Product[] list = ProductList.Where(P => P.UnitsInStock == 0).ToArray(); // array
+            //Dictionary<long,Product> list = ProductList.Where(P => P.UnitsInStock == 0).ToDictionary(P=> P.ProductID);
+
+
+            //foreach (var item in list)
+            //{
+            //    Console.WriteLine(item);   
+            //} 
+            #endregion
+
 
         }
     }
