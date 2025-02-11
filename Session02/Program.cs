@@ -260,6 +260,27 @@ namespace Session02
             //} 
             #endregion
 
+            #region Generation Operators
+            // 7. Generation Operators
+            // the only way to call this method as => Class memeber method throught "Enumerable" Class
+
+            // Range, Empty, Repeat
+
+            //var result = Enumerable.Range(1, 200);
+
+            //var result = Enumerable.Empty<Product>().ToList();
+
+            //result.Add(new Product() { ProductName = "dsfasf" });
+
+            //var result = Enumerable.Repeat(ProductList[0], 3);
+            //var result = Enumerable.Repeat(1, 3);
+
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //} 
+            #endregion
+
 
         }
     }
