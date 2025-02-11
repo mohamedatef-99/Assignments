@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.ComponentModel;
 using static Session02.ListGenerator;
 
@@ -161,6 +163,45 @@ namespace Session02
             //} 
             #endregion
 
+            #region Elements Operators - Immediate Execution
+            // 4. Elements Operators - Immediate Execution
+
+            //var result = ProductList.First(); // First => may throw Execption if the list doesnt contain elements
+            //var result = ProductList.Last(); // Last => may throw Execption if the list doesnt contain elements
+
+            //var result = ProductList.First(P => P.UnitsInStock == 1000); // First => may throw Execption if the list doesnt contain elements
+            //var result = ProductList.First(P => P.UnitsInStock == 0); // Last => may throw Execption if the list doesnt contain elements
+
+            //var result = ProductList.FirstOrDefault(new Product() { ProductName = "dfdsf"}); // will not throw execption if list is empty. it will return null
+
+            //var result = ProductList.FirstOrDefault(P => P.UnitsInStock == 1000 /*it will return null so it takes anothor arg to return if null*/, new Product() { ProductName = "dfdsf" });
+
+            //var result = ProductList.LastOrDefault(); // return null if empty
+            //var result = ProductList.LastOrDefault(new Product() { ProductName = "dfdsf" }); // takes default value to return if null
+            //var result = ProductList.LastOrDefault(P => P.UnitsInStock == 1000); // return null if empty
+            //var result = ProductList.LastOrDefault(P => P.UnitsInStock == 1000, new Product() { ProductName = "dfdsf" }); // takes default value to return if null
+
+            // Note: All sequence is array based
+            //var result = ProductList.ElementAt(0); // return first index
+            //var result = ProductList.ElementAt(100000000000000000000000000000000000000); // throw exception if index out of the range
+
+            //var result = ProductList.ElementAtOrDefault(1); // if sequence empty it will return null
+
+            //var result = ProductList.Single(); // throw exception if sequence contain more than one element or sequence contain no element
+            //var result = ProductList.Single(P => P.UnitsInStock == 0); // throw exception if sequence contain more than one element or sequence contain no element
+
+            //var result = ProductList.SingleOrDefault(P => P.UnitsInStock == 1000); // throw exception if sequence contain more than one element and if sequence contain no element it will return default value [null]
+
+            //var result = ProductList.SingleOrDefault(P => P.UnitsInStock == 1000, new Product() { ProductName = "default value" }); // takes default value to return if returns null
+
+            //var result = ProductList.DefaultIfEmpty(new Product() { ProductName="dfsdf"}); // [check if sequence is empty] return empty sequence or default value if sequence empty
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //Console.WriteLine(result?.ProductName ?? "NA"); 
+            #endregion
 
 
 
