@@ -301,7 +301,30 @@ namespace Session02
             //} 
             #endregion
 
+            #region Quantifiers Operators - Return Boolean
+            // 9. Quantifiers Operators - Return Boolean
+            // Any - All - SequneceEqual - Contains
 
+            //var Seq01 = Enumerable.Range(1, 100);
+            //var Seq02 = Enumerable.Range(50, 100);
+
+            // Any() --> Return True if there are at least one Element [in sequence or match the condition]
+            //var result = Seq01.Any(N => N % 2 == 0);
+
+            //var result = ProductList.Any();
+            //var result = ProductList.Any(P => P.UnitsInStock == 0);
+
+            // All() --> Return True if all element in the Sequence match the conditions or sequence is Empty
+            //var result = ProductList.All(P => P.UnitsInStock == 0);
+            //var result = ProductList.All(P => P.UnitPrice > 0);
+
+            //var result = Seq01.SequenceEqual(Seq02);
+
+            //var result = Seq02.Contains(1);
+            //var result = Seq02.Contains();
+
+            //Console.WriteLine(result); 
+            #endregion
 
         }
     }
