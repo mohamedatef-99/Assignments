@@ -326,6 +326,23 @@ namespace Session02
             //Console.WriteLine(result); 
             #endregion
 
+            #region Zipping Operators
+            // Zipping Operators
+            // zip
+
+            //List<string> words = new List<string>() { "ten", "twenty", "thirty"};
+            //List<int> numbers = new List<int>() { 10,2,20,24,62};
+
+            //var result = words.Zip(numbers, (w,n) => $"{n} --> {w}");
+
+            //foreach (var item in words)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+
+
         }
     }
 }
