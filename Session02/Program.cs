@@ -2,8 +2,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Text.RegularExpressions;
 using System.Xml.Linq;
+using Session02.DEV;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+
+
 
 //using static Session02.ListGenerator;
 using static Session02.DEV.ListGenerators;
@@ -447,6 +452,22 @@ namespace Session02
             //    Console.WriteLine(item);
             //} 
             #endregion
+
+            #region  LINQ - Element Operators
+            // 1. Get first Product out of Stock 
+            //var result = ProductList.First(P => P.UnitsInStock == 0);
+            //Console.WriteLine(result);
+
+            //2.Return the first product whose Price > 1000, unless there is no match, in which case null is returned.
+            //var result = ProductList.FirstOrDefault(P => P.UnitPrice > 100);
+            //Console.WriteLine(result);
+
+            //3.Retrieve the second number greater than 5
+            //int[] Arr = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
+            //var result = Arr.Where(N => N > 5).ElementAt(1);
+            //Console.WriteLine(result); 
+            #endregion
+
 
 
         }
