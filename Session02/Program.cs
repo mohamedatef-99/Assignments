@@ -342,6 +342,34 @@ namespace Session02
 
             #endregion
 
+            #region Grouping Operators
+            // Grouping Operators
+
+            //var result = ProductList.GroupBy(P => P.Category);
+
+            //result = from P in ProductList
+            //         where P.UnitsInStock > 0
+            //         group P by P.Category
+            //         into Category
+            //         where Category.Count() > 10
+            //         select new { CategoryName = Category.Key, CountOfCategory = Category.Count() };
+
+            //var result = ProductList.Where(P => P.UnitsInStock > 0)
+            //    .GroupBy(P => P.Category)
+            //    .Where(C => C.Count() > 5)
+            //    .Select(c => new { CategoryName = c.Key, CountOfCategory = c.Count() });
+
+            //foreach (var item in result)
+            //{
+            //    //Console.WriteLine(Category.Key);
+            //    //foreach (var product in Category)
+            //    //{
+            //    //    Console.WriteLine(product);
+            //    //}
+            //    Console.WriteLine(item);
+            //} 
+            #endregion
+
 
         }
     }
