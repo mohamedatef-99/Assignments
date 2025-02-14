@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Text.RegularExpressions;
 using static Session02.ListGenerator;
 
 namespace Session02
@@ -370,7 +371,52 @@ namespace Session02
             //} 
             #endregion
 
+            #region Partioning Operators - Take, TakeLast, Skip, SkipLast, TakeWhile, SkipWhile
+            // Partioning Operators - Take, TakeLast, Skip, SkipLast, TakeWhile, SkipWhile
 
+            // used for pagination
+
+            //var restult = ProductList.Where(P => P.UnitsInStock == 0).Take(2);
+            //var restult = ProductList.Where(P => P.UnitsInStock == 0).TakeLast(2);
+            //var restult = ProductList.TakeLast(2);
+
+
+            //var restult = ProductList.Skip(0).Take(5);
+            //var restult = ProductList.Skip(5).Take(5);
+            //var restult = ProductList.SkipLast(5);
+
+            //int[] Numbers = { 1, 2, 3, 5, 89, 6, 5 };
+
+            //var result = Numbers.TakeWhile((N) => N % 3 == 0);
+            //var result = Numbers.SkipWhile((N) => N % 3 == 0);
+
+
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //} 
+            #endregion
+
+            #region let  / into 
+            // let  / into 
+
+            // Query Syntax
+
+            //List<string> Names = new List<string>() { "ahmed", "mohamed"};
+
+            //var result = from Name in Names
+            //             select Regex.Replace(Name, "[aeoiuAEOIU]", string.Empty)
+            //             into NoVolName
+            //             // into: Restart Query with introducing New Range variable
+            //             where NoVolName.Length > 3
+            //             select NoVolName;
+
+
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //} 
+            #endregion
         }
     }
 }
