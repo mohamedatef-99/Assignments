@@ -3,7 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text.RegularExpressions;
-using static Session02.ListGenerator;
+using System.Xml.Linq;
+
+//using static Session02.ListGenerator;
+using static Session02.DEV.ListGenerators;
 
 namespace Session02
 {
@@ -14,6 +17,7 @@ namespace Session02
             // LINQ: 40+ Extension Methods
             // LINQ: 13 Category
 
+            #region DEMO
             #region Filteration Operators - Where / OfType
             // 1. Filteration Operators - Where / OfType
 
@@ -417,6 +421,34 @@ namespace Session02
             //    Console.WriteLine(item);
             //} 
             #endregion
+            #endregion
+
+            #region LINQ - Restriction Operators
+            // 1. Find all products that are out of stock.
+            //var result = ProductList.Where(P => P.UnitsInStock == 0);
+
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            // 2. Find all products that are in stock and cost more than 3.00 per unit.
+            //var result = ProductList.Where(P => P.UnitsInStock > 0 && P.UnitPrice > 3);
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //3.Returns digits whose name is shorter than their value.
+            //String[] Arr = { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
+            //var result = Arr.Where((name, index) => name.Length < index);
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //} 
+            #endregion
+
+
         }
     }
 }
