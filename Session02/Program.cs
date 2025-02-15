@@ -433,6 +433,7 @@ namespace Session02
             #endregion
             #endregion
 
+            #region DEV
             #region LINQ - Restriction Operators
             // 1. Find all products that are out of stock.
             //var result = ProductList.Where(P => P.UnitsInStock == 0);
@@ -720,6 +721,7 @@ namespace Session02
             //{
             //    Console.WriteLine(item);
             //} 
+            #endregion 
             #endregion
 
 
