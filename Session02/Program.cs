@@ -684,9 +684,43 @@ namespace Session02
             //} 
             #endregion
 
+            #region LINQ - Set Operators
+            // 1. Find the unique Category names from Product List
+            //var result = ProductList.Select(P => P.Category).Distinct();
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
 
+            // 2. Produce a Sequence containing the unique first letter from both product and customer names.
+            //var result = ProductList.Select(P => P.ProductName[0]).Concat(CustomerList.Select(c => c.CustomerName[0])).Distinct();
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
 
+            // 3. Create one sequence that contains the common first letter from both product and customer names.
+            //var result = ProductList.Select(P => P.ProductName[0]).Intersect(CustomerList.Select(c => c.CustomerName[0]));
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
 
+            // 4.Create one sequence that contains the first letters of product names that are not also first letters of customer names.
+            //var result = ProductList.Select(P => P.ProductName[0]).Except(CustomerList.Select(c => c.CustomerName[0]));
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            // 5.Create one sequence that contains the last Three Characters in each name of all customers and products, including any duplicates
+            //var result = ProductList.Select(P => P.ProductName.Length >= 3 ? P.ProductName[^3..] : P.ProductName)
+            //    .Concat(CustomerList.Select(c => c.CustomerName.Length >= 3 ? c.CustomerName[^3..] : c.CustomerName));
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //} 
+            #endregion
 
 
 
