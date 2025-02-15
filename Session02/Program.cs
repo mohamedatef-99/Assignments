@@ -626,6 +626,68 @@ namespace Session02
             //} 
             #endregion
 
+            #region LINQ – Transformation Operators
+            // 1. Return a sequence of just the names of a list of products.
+            //var result = ProductList.Select(P => P.ProductName);
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            // 2. Produce a sequence of the uppercase and lowercase versions of each word in the original array (Anonymous Types).
+            //string[] words = { "aPPLE", "BlUeBeRrY", "cHeRry" };
+            //var result = words.Select(w => new
+            //{
+            //    uppercase = w.ToUpper(),
+            //    lowercase = w.ToLower()
+            //});
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            // 3. Produce a sequence containing some properties of Products, including UnitPrice which is renamed to Price in the resulting type.
+            //var result = ProductList.Select(P => new { 
+            //    name = P.ProductName,
+            //    price = P.UnitPrice,
+            //});
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //4.Determine if the value of int in an array matches their position in the array.
+            //int[] Arr = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
+            //var result = Arr.Select((value, index) => new
+            //{
+            //    value = value,
+            //    index = index,
+            //    match = value == index
+            //});
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            // 5. Returns all pairs of numbers from both arrays such that the number from numbersA is less than the number from numbersB.
+            //int[] numbersA = { 0, 2, 4, 5, 6, 8, 9 };
+            //int[] numbersB = { 1, 3, 5, 7, 8 };
+            //var result = numbersA.SelectMany(a => numbersB, (a,b) => new
+            //{
+            //    A = a,
+            //    B = b
+            //}).Where(pair => pair.A < pair.B);
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+
+            //} 
+            #endregion
+
+
+
+
+
 
 
         }
