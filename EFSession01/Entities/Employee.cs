@@ -29,4 +29,35 @@ namespace EFSession01.Entities
 
     //}
 
+    // 2. Data Annotaion
+    //[Table("Mohamed", Schema ="dbo")]
+    //class Employee
+    //{
+    //    [Key]
+    //    [DatabaseGenerated(DatabaseGeneratedOption.None)]
+    //    public int EmpId { get; set; }
+
+    //    [Required]
+    //    [Column("EmpName", TypeName ="varchar")]
+    //    [MaxLength(50)]
+    //    [StringLength(50, MinimumLength = 10)]
+    //    public string? Name { get; set; }
+
+    //    [Range(0, 100)]
+    //    public int? Age { get; set; }
+
+    //    [EmailAddress]
+    //    public string EmailAddress { get; set; }
+
+    //    [Phone]
+    //    [DataType(DataType.PhoneNumber)]
+    //    public string PhoneNumber { get; set; }
+
+    //    [Column(TypeName = "money")]
+    //    [DataType(DataType.Currency)]
+    //    public double Salary { get; set; }
+
+    //    [NotMapped]
+    //    public double TotalSalary { get; set; }
+    //}
 }
