@@ -11,7 +11,7 @@ namespace EFSession01.Entities
     // EF Core Support 4 way for mappping Class in Database: [ Table, view, function]
     // 1. By Convention [Default Behaviour]
     // 2. Data Annotaion [Set of Attributes used for data validation]
-
+    // 3. Fluent API
 
     // Entity
     // POCO :
@@ -38,7 +38,7 @@ namespace EFSession01.Entities
     //    public int EmpId { get; set; }
 
     //    [Required]
-    //    [Column("EmpName", TypeName ="varchar")]
+    //    [Column("EmpName", TypeName = "varchar")]
     //    [MaxLength(50)]
     //    [StringLength(50, MinimumLength = 10)]
     //    public string? Name { get; set; }
@@ -60,4 +60,14 @@ namespace EFSession01.Entities
     //    [NotMapped]
     //    public double TotalSalary { get; set; }
     //}
+
+    // 3. Fluent API
+    class Employee
+    {
+        public string EmpId { get; set; }
+        public string Name { get; set; }
+        public int? Age { get; set; }
+        public string Email { get; set; }
+
+    }
 }
