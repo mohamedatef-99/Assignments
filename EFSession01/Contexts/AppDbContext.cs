@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EFSession01.Configuration;
 using EFSession01.Entities;
 using Microsoft.EntityFrameworkCore;
 
@@ -16,9 +17,11 @@ namespace EFSession01.Contexts
         {
             //modelBuilder.Entity<Employee>().HasKey("EmpId");
             //modelBuilder.Entity<Employee>().HasKey(nameof(Employee.EmpId));
-            modelBuilder.Entity<Employee>().HasKey(E => E.EmpId);
+            //modelBuilder.Entity<Employee>().HasKey(E => E.EmpId);
 
-            modelBuilder.Entity<Employee>().Property(E => E.Name).IsRequired();
+            //modelBuilder.Entity<Employee>().Property(E => E.Name).IsRequired();
+            modelBuilder.ApplyConfiguration(new EmployeeConfigurations());
+            base.OnModelCreating(modelBuilder);
         }
         public AppDbContext() : base()
         {

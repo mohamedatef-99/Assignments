@@ -12,6 +12,7 @@ namespace EFSession01.Entities
     // 1. By Convention [Default Behaviour]
     // 2. Data Annotaion [Set of Attributes used for data validation]
     // 3. Fluent API
+    // 4. Class Configuration
 
     // Entity
     // POCO :
