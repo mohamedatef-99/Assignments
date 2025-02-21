@@ -14,8 +14,25 @@ namespace EFSession01
             // Dapper is simple close more to ADO than EF Core 
             #endregion
 
-            AppDbContext context = new AppDbContext();
+            //AppDbContext context = new AppDbContext();
             //context.Database.Migrate();
+
+
+            // CRUD Operation
+
+            //try
+            //{
+            //    // Code
+            //}
+            //finally
+            //{
+            // Disconnect with Database
+            //    context.Dispose();
+            //}
+
+            using AppDbContext context = new AppDbContext();
+
+
         }
     }
 }
