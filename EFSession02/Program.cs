@@ -67,6 +67,24 @@ namespace EFSession02
             //Console.WriteLine(result.Id); 
             #endregion
 
+            #region Update
+            // Update
+            //var result = context.Employee.FirstOrDefault(E => E.Id == 2);
+            //Console.WriteLine(context.Entry(result).State);
+
+            //result.Name = "Omar ali";
+            //Console.WriteLine(context.Entry(result).State);
+
+            //context.Update(result);
+
+            //context.SaveChanges();
+            //Console.WriteLine(context.Entry(result).State); 
+            #endregion
+
+
+
+
+
         }
     }
 }
