@@ -12,5 +12,6 @@ namespace EFSession02.Entities
         public string Name { get; set; }
         public int Age { get; set; }
         public double Salary { get; set; }
+        //public Department? Department { get; set; } // Navigational Property
     }
 }
