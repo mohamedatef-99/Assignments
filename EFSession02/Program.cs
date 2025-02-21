@@ -81,7 +81,12 @@ namespace EFSession02
             //Console.WriteLine(context.Entry(result).State); 
             #endregion
 
-
+            #region Delete
+            // Delete
+            //var result = context.Employee.FirstOrDefault(E => E.Id == 5);
+            //context.Employee.Remove(result);
+            //context.SaveChanges(); 
+            #endregion
 
 
 
