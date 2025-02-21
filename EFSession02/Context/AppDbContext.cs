@@ -24,5 +24,6 @@ namespace EFSession02.Context
         {
             optionsBuilder.UseSqlServer("Server = .; Database = AppEF02; Trusted_Connection = True; TrustServerCertificate = True");
         }
+        public DbSet<Employee> Employee { get; set; }
     }
 }

@@ -52,6 +52,21 @@ namespace EFSession02
             //context.SaveChanges(); 
             #endregion
 
+            #region Read - Select
+            // Read - Select
+            //var result = context.Employee.FirstOrDefault(E => E.Id == 4);
+
+            //var result = context.Employee.ToList();
+
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item.Name);
+            //}
+
+            //Console.WriteLine(result.Name);
+            //Console.WriteLine(result.Id); 
+            #endregion
+
         }
     }
 }
