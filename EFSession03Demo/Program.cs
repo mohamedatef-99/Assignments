@@ -171,6 +171,41 @@ namespace EFSession03Demo
             #endregion
 
 
+            #region Local vs Remote
+            // Local vs Remote
+            // Remote
+            //context.Employees.Any();
+            //context.Employees.Any();
+            //context.Employees.Any();
+            //context.Employees.Any();
+            //context.Employees.Any();
+            //context.Employees.Any();
+            //context.Employees.Any();
+            //context.Employees.Any();
+            //context.Employees.Any();
+            //context.Employees.Any();
+
+            // Local
+            //context.Employees.Load();
+
+            //context.Employees.Local.Any();
+            //context.Employees.Local.Any();
+            //context.Employees.Local.Any();
+            //context.Employees.Local.Any();
+            //context.Employees.Local.Any();
+            //context.Employees.Local.Any();
+            //context.Employees.Local.Any();
+            //context.Employees.Local.Any();
+            //context.Employees.Local.Any();
+            //context.Employees.Local.Any();
+            //context.Employees.Local.Any();
+            //context.Employees.Local.Any(); 
+            #endregion
+
+
+
+
+
         }
     }
 }
