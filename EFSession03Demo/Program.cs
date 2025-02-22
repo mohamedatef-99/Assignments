@@ -129,6 +129,39 @@ namespace EFSession03Demo
             //} 
             #endregion
 
+            #region Join Operators
+            // Join Operators - Join inner
+
+            // Fluent Syntax
+            //var result = context.Employees.Join(context.Departments, E => E.DeptId, D => D.Id, (E,D) => new
+            // {
+            //    EmpId = E.Id,
+            //    EmpName =  E.Name,
+            //    DeptId = D.Id,
+            //    DeptName =  D.Name
+            // });
+
+            // // Query Expression
+            // result = from E in context.Employees
+            //          join D in context.Departments
+            //          on E.DeptId equals D.Id
+            //          select new
+            //          {
+            //              EmpId = E.Id,
+            //              EmpName = E.Name,
+            //              DeptId = D.Id,
+            //              DeptName = D.Name
+            //          };
+
+            // foreach (var item in result)
+            // {
+            //     Console.WriteLine(item);
+            // } 
+            #endregion
+
+
+
+
         }
     }
 }
