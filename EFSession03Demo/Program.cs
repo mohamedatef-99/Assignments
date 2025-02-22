@@ -159,7 +159,16 @@ namespace EFSession03Demo
             // } 
             #endregion
 
+            #region Tracking vs NoTracking
+            // Tracking vs NoTracking
+            //var result = context.Employees.AsNoTracking().FirstOrDefault(E => E.Id == 10);
+            //Console.WriteLine(context.Entry(result).State);
+            //result.Name = "Amr";
+            //Console.WriteLine(context.Entry(result).State);
+            //Console.WriteLine(result.Name);
+            //context.SaveChanges();
 
+            #endregion
 
 
         }
