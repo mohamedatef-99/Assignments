@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace EFSession03Demo.Entitis
 {
-    class Department
+    public class Department
     {
         public int Id { get; set; }
         public string Name { get; set; }
         public DateTime CreateAt { get; set; } = DateTime.UtcNow;
-        public List<Employee> Employees { get; set; }
+        public virtual List<Employee> Employees { get; set; }
     }
 }

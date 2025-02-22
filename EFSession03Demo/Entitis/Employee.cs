@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EFSession03Demo.Entitis
 {
-    class Employee
+    public class Employee
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -15,6 +15,6 @@ namespace EFSession03Demo.Entitis
         public string Address { get; set; }
         public DateTime HiriginDate { get; set; } = DateTime.Now;
         public int DeptId { get; set; }
-        public Department WorkFor { get; set; }
+        public virtual Department WorkFor { get; set; }
     }
 }

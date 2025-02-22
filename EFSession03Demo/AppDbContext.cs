@@ -18,7 +18,8 @@ namespace EFSession03Demo
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server = .; Database = EFSession03; Trusted_Connection = True; TrustServerCertificate = True");
+            //optionsBuilder.UseLazyLoadingProxies(); // OR
+            optionsBuilder.UseLazyLoadingProxies().UseSqlServer("Server = .; Database = EFSession03; Trusted_Connection = True; TrustServerCertificate = True");
 
             base.OnConfiguring(optionsBuilder);
         }
