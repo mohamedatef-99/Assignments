@@ -1,4 +1,5 @@
 ﻿using EFSession03Demo.Entitis;
+using Microsoft.EntityFrameworkCore;
 
 namespace EFSession03Demo
 {
@@ -76,6 +77,26 @@ namespace EFSession03Demo
             //context.Entry(department).Collection(D => D.Employees).Load(); // Explict Loading
 
 
+            //Console.WriteLine(department.Name);
+            //foreach (var item in department.Employees)
+            //{
+            //    Console.WriteLine(item.Name);
+            //} 
+            #endregion
+
+            #region Eager Loading
+            // 2. Eager Loading
+            //var employee = context.Employees.Include(E => E.WorkFor).FirstOrDefault(E => E.Id == 10);
+
+            //Console.WriteLine(employee?.Id ?? 0);
+            //Console.WriteLine(employee?.Name ?? "NA");
+            //Console.WriteLine(employee?.Salary ?? 0);
+            //Console.WriteLine(employee?.Age ?? 0);
+            //Console.WriteLine(employee?.Address ?? "NA");
+            //Console.WriteLine(employee?.WorkFor?.Name ?? "NA");
+
+
+            //var department = context.Departments.Include(D => D.Employees).FirstOrDefault(D => D.Id == 100);
             //Console.WriteLine(department.Name);
             //foreach (var item in department.Employees)
             //{
